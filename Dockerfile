@@ -3,7 +3,7 @@ LABEL maintainer="Pedro Henrique Vilas Boas <pedro@vilasboas.eti.br>"
 COPY src/entrypoint.sh /opt/entrypoint.sh
 RUN apt-get update -q \
   && \
-    apt install -y -qq apt-mirror apache2 \
+    apt install -y -qq apt-mirror dpkg-dev apache2 gzip \
   && \
     apt-get autoremove \
   && \
