@@ -18,7 +18,9 @@ COPY src/mirror.list /etc/apt/mirror.list
 COPY src/000-default.conf /etc/apache2/sites-enabled/000-default.conf
 RUN mkdir -p /var/spool/apt-mirror/mirror/http.debian.net/debian/
 RUN ln -s /var/spool/apt-mirror/mirror/http.debian.net/debian/ /var/www/debian
+RUN mkdir -p /var/www/private/debs
 RUN chown www-data:www-data /var/www/debian
+RUN chown www-data:www-data /var/www/private/debs
 VOLUME ["/mnt/mirror/debian"]
 EXPOSE 80
 EXPOSE 443
