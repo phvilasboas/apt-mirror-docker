@@ -5,7 +5,9 @@ Repositório APT DEBIAN 09 em container
 
 _root@docker~# docker build -t aptmirror:latest ._
 
-# Para config nas maquinas usuario e senha no aquivo auth.conf
+# Config nas maquinas
+
+**Para config nas maquinas usuario e senha no aquivo auth.conf**
 _root@user-# vim /etc/apt/auth.conf_
 
 Exemplo de auth.conf:
