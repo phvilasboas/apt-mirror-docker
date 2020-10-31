@@ -10,9 +10,9 @@ _root@user-# vim /etc/apt/auth.conf_
 
 Exemplo de auth.conf:
 
-machine apt.exemplo.com.br
+'machine apt.exemplo.com.br
   login user
-  password pass
+  password pass'
 
 
 [//]: # (licenciado sob a licença Apache 2.0)
